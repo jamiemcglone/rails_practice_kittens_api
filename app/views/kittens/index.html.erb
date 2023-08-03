@@ -1,0 +1,10 @@
+<h1>This is the kittens API homepage</h1>
+<% @kittens.each do |kitten| %>
+    <div>
+    <a href="/kittens/<%= kitten.id %>"><%= kitten.name %></>
+    </div>
+    <br>
+<% end %>
+<br>
+<br>
+<a href="/kittens/new"><button>Create new kitten</button></a>

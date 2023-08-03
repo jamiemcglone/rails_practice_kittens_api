@@ -1,0 +1,19 @@
+<div>
+<%= form_with model: @kitten do |f| %>
+    <div>
+        <%= f.label :name %>
+        <%= f.text_field :name, placeholder: "Name", required: true %>
+        <br>
+        <%= f.label :age %>
+        <%= f.number_field :age, placeholder: "Age", required: true %>
+        <br>
+        <%= f.label :cuteness %>
+        <%= f.number_field :cuteness, placeholder: "Cuteness", required: true %>
+        <br>
+        <%= f.label :softness %>
+        <%= f.number_field :softness, placeholder: "Softness", required: true %>
+        <br>
+    </div>
+    <%= f.submit "Create Kitten" %>
+    <% end %>
+</div>
